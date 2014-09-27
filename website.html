@@ -7,6 +7,7 @@
         $('.body').hover(function(){
           $('.submenu').hide();
           $('.login').hide();
+          $('.signup').hide();
         });
         $('.menu').hover(function(){
           $('.submenu').show();
@@ -29,6 +30,10 @@
           $('.menu').hide();
           $('.login').show();
         });
+        $('.needaccount').click(function(){
+        	$('.login').hide();
+        	$('.signup').show();
+        })
       });
     </script>
     <style>
@@ -61,7 +66,7 @@
 		      Username: <input type ='text'><br>
 		      Password: <input type='password'><br>
 		      <input type ='submit' style='background-color:#009688'><br>
-		      <a href ='google.com'>I don't have an account</a>
+		      <a class='needaccount'>I don't have an account</a>
 		    </div>
 	    </form>
     </div>
