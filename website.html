@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function(){
   $('.menu').hover(function(){
-    $('.submenu').css('display','incline');
+    $('.submenu').toggleClass('hi');
   });
 });
 </script>
@@ -14,6 +14,8 @@ $(document).ready(function(){
     text-align:right;
     background-color:#3f51b5;
     margin-right:20px;
+  }
+  .hi{
     display:None;
   }
 </style>
@@ -21,7 +23,7 @@ $(document).ready(function(){
 <body style='background-color:#3f51b5'>
 <div style='text-align:right;height:70px;text-size:24px'><div class='menu' style='margin-top:35px;margin-right:20px;margin-bottom:20px;display:block;background-color:#3f51b5'>Username</div></div>
 <div>
-  <p class='submenu'>Log Off</p>
+  <p class='submenu' class='hi'>Log Off</p>
 </div>
 <div style='background-color:#c5cae9;min-height:5000px'><p style='font-size:32px;display:inline-block;margin-left:20px'>New Badges</p>
 <p> </p>
