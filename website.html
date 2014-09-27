@@ -4,16 +4,16 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $('.button').hover(function(){
-    $(this).fadeOut('slow');
+  $('.menu').hover(function(){
+    $('.submenu').hide();
   });
 });
 </script>
 </head>
 <body style='background-color:#3f51b5'>
-<div style='text-align:right;height:70px;text-size:24px'><div style='margin-top:35px;margin-right:20px;margin-bottom:20px'>Username</div></div>
-<div style='text-align:right;background-color:#3f51b5;margin-right:-100px'>
-  Log Off
+<div class='menu'style='text-align:right;height:70px;text-size:24px'><div style='margin-top:35px;margin-right:20px;margin-bottom:20px'>Username</div></div>
+<div style='text-align:right;background-color:#3f51b5;margin-top:-100px'>
+  <li class='submenu'>Log Off</li>
 </div>
 <div style='background-color:#c5cae9;min-height:5000px'><p style='font-size:32px;display:inline-block;margin-left:20px'>New Badges</p>
 <p> </p>
