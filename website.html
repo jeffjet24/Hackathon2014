@@ -4,8 +4,8 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("div").mouseenter(function(){
-    $(this).hide();
+  $('.button').hover(function(){
+    $(this).fade();
   });
 });
 </script>
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 <div style='text-align:right;height:70px'>Username</div>
 <div style='background-color:#c5cae9'>Hello
-  <div style='height:200px;width:200px;margin-top:auto;margin-bottom:auto;background-image:url("http://i.stack.imgur.com/12F8N.png")'>
+  <div id='button' style='height:200px;width:200px;margin-top:auto;margin-bottom:auto;background-image:url("http://i.stack.imgur.com/12F8N.png")'>
     ;asldkfjaw
   </div>
 </div>
