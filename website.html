@@ -10,6 +10,15 @@
         $('.menu').hover(function(){
           $('.submenu').show();
         });
+        $('.counter').click(function(){
+          $(this).fadeTo(0.5);
+        });
+        $('.button').hover(function(){
+          $(this).show();
+        });
+        $('.body').hover(function(){
+          $('.info').hide();
+        });
       });
     </script>
     <style>
@@ -54,6 +63,7 @@
     <div class='button'>
       <div>
         <div class = 'info'>
+          In the park
         </div>
         <p style='text-align:center;margin-top:40%'>
           Pick up 10
