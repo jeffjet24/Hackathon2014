@@ -6,6 +6,7 @@
       $(document).ready(function(){
         $('.body').hover(function(){
           $('.submenu').hide();
+          $('.login').hide();
         });
         $('.menu').hover(function(){
           $('.submenu').show();
@@ -26,6 +27,7 @@
           $('.body').hide();
           $(this).hide();
           $('.menu').hide();
+          $('.login').show();
         });
       });
     </script>
@@ -51,6 +53,17 @@
   <body style='background-color:#3f51b5'>
     <div style='font-size:72px;display:inline-block;position:absolute;margin-left:20px'>
       AMAS
+    </div>
+    <div class='login' style='position:absolute'>
+      <form style='text-align:center'>
+		    <div style ='background-color:#c5cae9;width:150px;margin-left:auto;margin-right:auto'>
+		      <p>Login</p>
+		      Username: <input type ='text'><br>
+		      Password: <input type='password'><br>
+		      <input type ='submit' style='background-color:#009688'><br>
+		      <a href ='google.com'>I don't have an account</a>
+		    </div>
+	    </form>
     </div>
     <div style='text-align:right;height:70px;text-size:24px'>
       <div class='menu' style='margin-top:35px;margin-right:20px;margin-bottom:20px;display:block;background-color:#3f51b5'>
