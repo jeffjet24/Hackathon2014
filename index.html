@@ -1,0 +1,24 @@
+<head>
+<script>
+function myFunction() {
+	var getRequest= new XMLHttpRequest();
+  getRequest.open('GET','https://sandbox.youracclaim.com/api/v1/organizations/b9c6023b-a963-4e07-b48c-db22c6abcd3a',true);
+var data=getRequest.responseText;
+data=data+'';
+    document.getElementById("demo").innerHTML = data;
+
+    console.log(data);
+}
+</script>
+</head>
+
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>
