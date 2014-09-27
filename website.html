@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('.body').hover(function(){
-    $('.submenu').hide();
-  });
-  $('.menu').hover(function(){
-    $('.submenu').show();
-  });
-});
-</script>
-<style>
-  .submenu{
-    text-align:right;
-    background-color:#3f51b5;
-    width:100px;
-    position:absolute;
-    right:25px;
-    top:45px;
-  }
-</style>
-</head>
-<body style='background-color:#3f51b5'>
-<div style='font-size:72px;display:inline-block;position:absolute;margin-left:20px'>AMAS</div>
-<div style='text-align:right;height:70px;text-size:24px'><div class='menu' style='margin-top:35px;margin-right:20px;margin-bottom:20px;display:block;background-color:#3f51b5'>Username</div></div>
-<div>
-  <p class='submenu' class='hi'>Log Off</p>
-</div>
-<div class='body' style='background-color:#c5cae9;min-height:1500px'><p style='font-size:32px;display:inline-block;margin-left:20px'>New Badges</p>
-<p> </p>
-  <div class='button' style='height:200px;width:200px;display:inline-block;margin-top:auto;margin-bottom:auto;background-image:url("http://i.stack.imgur.com/12F8N.png")'>
-    <div><p style='text-align:center;margin-top:40%'>aaaaaaaaaaaaaaa</p><p style='text-align:center;margin-bottom:50%'>bbbbbbbbbbbbbbb</p></div>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.body').hover(function(){
+          $('.submenu').hide();
+        });
+        $('.menu').hover(function(){
+          $('.submenu').show();
+        });
+      });
+    </script>
+    <style>
+      .submenu{
+        text-align:right;
+        background-color:#3f51b5;
+        width:100px;
+        position:absolute;
+        right:25px;
+        top:45px;
+      }
+      .button{
+        height:200px;
+        width:200px;
+        display:inline-block;
+        margin-top:auto;
+        margin-bottom:auto;
+        background-image:url("http://i.stack.imgur.com/12F8N.png");
+      }
+    </style>
+  </head>
+  <body style='background-color:#3f51b5'>
+    <div style='font-size:72px;display:inline-block;position:absolute;margin-left:20px'>
+      AMAS
+    </div>
+    <div style='text-align:right;height:70px;text-size:24px'>
+      <div class='menu' style='margin-top:35px;margin-right:20px;margin-bottom:20px;display:block;background-color:#3f51b5'>
+        Username
+      </div>
+    </div>
+    <div>
+      <p class='submenu' class='hi'>
+        Log Off
+      </p>
+    </div>
+  <div class='body' style='background-color:#c5cae9;min-height:1500px'>
+    <p style='font-size:32px;display:inline-block;margin-left:20px'>
+      New Badges
+    </p>
+    <p> 
+    </p>
+    <div class='button'>
+      <div>
+        <div class = 'info'>
+        </div>
+        <p style='text-align:center;margin-top:40%'>
+          Pick up 10
+        </p>
+        <p style='text-align:center;margin-bottom:50%'>
+         pieces of trash!
+        </p>
+      </div>
+    </div>
+    <p>
+    </p>
+    <div class= 'counter' style='margin-right:40px;background-color:#30ACFF;height:250px;width:250px;border:9px solid black;margin-left:40px;display:inline-block'>
+    <p style='text-align:center;margin-top:50%'>
+      Number Completed Badges
+    </div>
+    <div class='counter' style='margin-right:40px;background-color:#30ACFF;height:250px;width:250px;border:9px solid black;margin-left:40px;display:inline-block'>
+      <p style='text-align:center;margin-top:50%'>
+        Total Points Earned
+      </p>
+    </div>
+    <div class='counter' style='margin-right:40px;background-color:#30ACFF;height:250px;width:250px;border:9px solid black;margin-left:40px;display:inline-block'>
+      <p style='text-align:center;margin-top:50%'>
+        Points to Next Level
+      </p>
+    </div>
   </div>
-  <p></p>
-  <div style='margin-right:40px;background-color:#30ACFF;height:250px;width:250px;border:9px solid black;margin-left:40px;display:inline-block'><p style='text-align:center;margin-top:50%'>Number Completed Badges</div>
-  <div style='margin-right:40px;background-color:#30ACFF;height:250px;width:250px;border:9px solid black;margin-left:40px;display:inline-block'><p style='text-align:center;margin-top:50%'>Total Points Earned</div>
-  <div style='margin-right:40px;background-color:#30ACFF;height:250px;width:250px;border:9px solid black;margin-left:40px;display:inline-block'><p style='text-align:center;margin-top:50%'>Points to Next Level</p></div>
-</div>
 
 </body>
 </html>
