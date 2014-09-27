@@ -4,8 +4,11 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
+  $('.body').hover(function(){
+    $('.submenu').hide();
+  });
   $('.menu').hover(function(){
-    $('.submenu').toggleClass('hi');
+    $('.submenu').show();
   });
 });
 </script>
@@ -17,10 +20,6 @@ $(document).ready(function(){
     position:absolute;
     right:25px;
     top:100px;
-    visability:hidden;
-  }
-  .hi{
-    visability:visible;
   }
 </style>
 </head>
@@ -29,7 +28,7 @@ $(document).ready(function(){
 <div>
   <p class='submenu' class='hi'>Log Off</p>
 </div>
-<div style='background-color:#c5cae9;min-height:5000px'><p style='font-size:32px;display:inline-block;margin-left:20px'>New Badges</p>
+<div class='body' style='background-color:#c5cae9;min-height:5000px'><p style='font-size:32px;display:inline-block;margin-left:20px'>New Badges</p>
 <p> </p>
   <div class='button' style='height:200px;width:200px;display:inline-block;margin-top:auto;margin-bottom:auto;background-image:url("http://i.stack.imgur.com/12F8N.png")'>
     <div><p style='text-align:center;margin-top:40%'>aaaaaaaaaaaaaaa</p><p style='text-align:center;margin-bottom:50%'>bbbbbbbbbbbbbbb</p></div>
