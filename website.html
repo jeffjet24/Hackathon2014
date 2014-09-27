@@ -3,16 +3,19 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
-$(document).ready(function() {
-  $("div").click(function(){
-    $(this).hide();
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
   });
-};
+});
 </script>
 </head>
-<body style='background-color:#3f51b5'>
-<div style='height:70px;text-align:center'>name</div>
-<div style='background-color:#e8eaf6;left-margin:0;right-margin:0'>Hello</div>
-<div class='red' id= 'red'style='height:10px;width:10px;background-color:red'></div>
+<body>
+
+<h2>This is a heading</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<button>Click me</button>
+
 </body>
 </html>
